@@ -17,8 +17,10 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
+import Card from "./components/Card"  //importamos el componente Card
 
-//objeto user
+/**
+ * //objeto user
 const user = {
     firstName: "Raul",
     lastName: "Palacios",
@@ -34,20 +36,21 @@ function getGreeting(user) {
     }
     return <h1>Hello Stranger</h1>
 }
-
-
-
+ */
 
 
 //MAIN
-const element = (
+/**
+ * const element = (
     <div>
         <h1>{getGreeting(user)}</h1>
         <img src={user.avatar} />
     </div>
 )
+ */
+
 
 
 //FINAL RENDER EXPORTATION
 const container = document.getElementById("root")
-ReactDOM.render(element, container)                   //(que renderear, donde renderear)
+ReactDOM.render(<Card></Card>, container)                   //(que renderear, donde renderear)
