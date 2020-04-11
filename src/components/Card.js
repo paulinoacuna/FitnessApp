@@ -6,7 +6,7 @@ import "./styles/Card.css"
 
 //Componente de tipo Clase
 class Card extends React.Component {
-
+/*
     //definir constructor pasando props al padre
     constructor(props) {
         super(props)
@@ -27,7 +27,7 @@ class Card extends React.Component {
 
         }, 5000)
     }
-
+*/
     render() {
         const { title, description, img, leftColor, rightColor } = this.props
         return (
@@ -42,7 +42,7 @@ class Card extends React.Component {
                 <div className="card-body">
                     <div className="row center">
                         <div className="col-6">
-                            <img src={this.state.image} className="float-right" />
+                            <img src={img} className="float-right" />
                         </div>
                         <div className="col-6 Fitness-Card-Info">
                             <h1>{title}</h1>
