@@ -1,20 +1,10 @@
 import React from "react"
+import './styles/AddButton.css'
+import img from '../images/add.png'
 
 
-function Button(props) {
-    return (
-        <div
-            style={{
-                marginTop: `30px`,
-                marginBottom: `30px`,
-                marginLeft: `620px`
-            }}
-        >
-            <img src={props.image} />
-
-
-        </div>
-    )
-}
+const Button = () => (
+    <img src={img} className="Fitness-Add" alt="exercise" />
+)
 
 export default Button
