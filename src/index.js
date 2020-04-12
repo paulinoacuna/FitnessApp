@@ -15,11 +15,10 @@
 
 //FORMA DE CREARLO CON REACT!
 
-import React from "react";
-import ReactDOM from "react-dom";
-import Exercises from "./pages/Exercises";
-//importamos bootstrap
+import React from "react"
+import ReactDOM from "react-dom"
 import "bootstrap/dist/css/bootstrap.css"
+import App from "./components/App"
 
 /**
  * //objeto user
@@ -55,4 +54,4 @@ function getGreeting(user) {
 
 //FINAL RENDER EXPORTATION
 const container = document.getElementById("root")
-ReactDOM.render(<Exercises />, container)
+ReactDOM.render(<App/>, container)
