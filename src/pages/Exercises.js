@@ -1,6 +1,7 @@
 import React from "react"
 import ExerciseList from "../components/ExerciseList"
 import Welcome from "../components/Welcome";
+import Button from "../components/Button";
 
 class Exercises extends React.Component {
 
@@ -38,10 +39,9 @@ class Exercises extends React.Component {
     render() {
         return (
             <div>
-                <Welcome username="Paulino" /* COMPONENTE 1 */ />
-                <ExerciseList
-                    exercises={this.state.data}
-                />
+                <Welcome username="Paulino" />
+                <ExerciseList exercises={this.state.data} />
+                <Button image="https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/add.png?alt=media&token=fbe1d973-4b4f-42d8-b76e-2c4354f6ed9d" />
             </div>
         )
     }
