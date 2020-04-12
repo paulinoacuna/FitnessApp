@@ -1,5 +1,4 @@
 import React from "react"
-import img_1 from "../images/exercise.png"
 import img_2 from "../images/circles.png"
 //importar estilos
 import "./styles/Card.css"
@@ -42,7 +41,7 @@ class Card extends React.Component {
                 <div className="card-body">
                     <div className="row center">
                         <div className="col-6">
-                            <img src={img} className="float-right" />
+                            <img src={img} className="float-right" alt="imagen"/>
                         </div>
                         <div className="col-6 Fitness-Card-Info">
                             <h1>{title}</h1>

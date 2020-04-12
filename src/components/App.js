@@ -3,20 +3,18 @@ import { BrowserRouter /*MANAGER DE RUTAS */, Route /*RUTA*/, Switch /*RENDEREA 
 import Exercises from "../pages/Exercises"
 import ExerciseNew from "../pages/ExerciseNew"
 import NoFound from "../pages/NoFound"
-function App() {
-    return (
-        <BrowserRouter>
-            <Switch>
-                <Route exact path="/exercise" /*DONDE RENDEREAR*/ component={Exercises} /* QUE RENDEREAR*/ />
-                <Route exact path="/exercise/new" component={ExerciseNew} />
-                <Route component={NoFound} /* ESTE ROUTE SE DESPLIEGA POR DEFECTO*/ />
-
-            </Switch>
 
 
+const App = () => (
+    <BrowserRouter>
+        <Switch>
+            <Route exact path="/exercise" /*DONDE RENDEREAR*/ component={Exercises} /* QUE RENDEREAR*/ />
+            <Route exact path="/exercise/new" component={ExerciseNew} />
+            <Route component={NoFound} /* ESTE ROUTE SE DESPLIEGA POR DEFECTO*/ />
 
-        </BrowserRouter>
-    )
-}
+        </Switch>
+    </BrowserRouter>
+)
+
 
 export default App
